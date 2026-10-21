@@ -1,161 +1,180 @@
-# Awesome-Game-Development-Libraries
+<div align="center">
 
-## Top Game Development Libraries Ecosystem
+<img src="./assets/banner.svg" alt="Awesome Game Development Libraries Banner" width="100%" />
 
+# 🎮 Awesome Game Development Libraries &amp; Engines
 
+**A comprehensive, curated directory of top game engines, cross-platform graphics libraries, rendering backends, and game programming frameworks.**
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+<p align="center">
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Game-Development-Libraries/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Game-Development-Libraries?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Game-Development-Libraries/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Game-Development-Libraries?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Game-Development-Libraries/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Game-Development-Libraries/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+</p>
 
-*Focused on Cross-Platform Game Frameworks, Rendering Libraries & Self-Hosted Engine Alternatives*  
+*Empowering indie game creators, graphics engineers, studio architects, and engine tinkerers with code-first frameworks, low-level APIs, and production-tested game tech.*
 
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Game Development Libraries**. These tools provide the foundational layers for building games—rendering sprites, handling input, playing audio, and managing game loops—without locking developers into a full engine's editor or workflow.
-
-
-
-**Examples** include MonoGame, FNA, Unity, Godot Engine, Cocos2d-x, Raylib, Allegro, SDL, and GameMaker (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, code-first game development, and transparent framework internals—ideal for programmers who want full control over their game architecture, studios avoiding platform risk, and developers building custom engines. The open-source landscape is anchored by **MonoGame** (the standard C# framework for 2D games, powering Stardew Valley and Celeste), **Godot** (the leading open-source engine with a full editor), **SDL** (the foundational multimedia library underpinning countless tools), and **Raylib** (the minimalist C library for learning and prototyping), with **FNA** serving as the most faithful XNA reimplementation.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Unity](https://unity.com/)**  
-
-  The dominant commercial game engine with a full editor, asset store, and massive ecosystem. **Pricing changes**: Unity Pro and Enterprise increased 5% starting January 12, 2026 . Unity Pro is required if annual revenue and funding exceed $200,000; Enterprise is required above $25 million . The engine itself is proprietary, though it supports C# scripting. Best for teams that want a mature editor, console support, and extensive third-party assets.
-
-
-
-- **[GameMaker](https://gamemaker.io/)**  
-
-  Commercial 2D-focused engine with a proprietary scripting language (GML) and visual editor. Popular for indie 2D games. Subscription-based pricing with free tier for non-commercial use. Proprietary and closed-source.
-
-
-
-- **[XNA (Legacy)](https://www.microsoft.com/en-us/download/details.aspx?id=20914)**  
-
-  Microsoft's discontinued .NET game framework (final release 2010). No longer maintained, but historically significant as the foundation for MonoGame and FNA. **Do not select for new projects**; reference only for understanding the lineage of modern C# game frameworks .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[MonoGame](https://github.com/MonoGame/MonoGame)**  
-
-  The standard open-source C# framework for cross-platform game development. A reimplementation of XNA 4.0, providing sprite rendering, audio, input, and font handling without an editor or scene system—developers build their own engine architecture on top . **Proven in production**: Stardew Valley, Celeste, and Hades were built with MonoGame . **v3.8.5** (July 2026) added DirectX 12 support, Vulkan backend, native pipeline improvements, and .NET 9 Android targeting . MIT licensed. **Limitations**: no web/WASM export (a notable gap for browser games), and the content pipeline has historically been a pain point . Best for C# developers who want full architectural control and console support potential.
-
-
-
-- **[Godot Engine](https://github.com/godotengine/godot)**  
-
-  The leading open-source game engine with a full visual editor, scene system, and its own scripting language (GDScript) plus C# support. **Strategic advantage**: MIT license means zero platform risk—terms cannot be changed or "rug-pulled" like proprietary engines . The 2023 Unity pricing crisis drove massive adoption; Godot is now the "smart money" choice for indie studios prioritizing financial predictability . **Hybrid workflow**: developers use GDScript for 95% of logic (fast prototyping) and C# for performance-critical bottlenecks . **Godot 4.5** migration notes include C# Android exports requiring .NET 9, and various API breaking changes . Best for teams that want a full engine experience without licensing risk, especially 2D and lightweight 3D projects.
-
-
-
-- **[SDL (Simple DirectMedia Layer)](https://github.com/libsdl-org/SDL)**  
-
-  The foundational cross-platform multimedia library that underpins countless game frameworks, emulators, and tools. **SDL 3.0** (official release January 2025) introduced a modern GPU API, improved high-DPI support, a new dialog API, filesystem/storage abstractions, and a comprehensive migration guide from SDL2 . Zlib licensed. Not a game engine—a low-level abstraction over platform APIs for windowing, input, audio, and rendering. Best for developers building their own engines or needing maximum platform coverage.
-
-
-
-- **[Raylib](https://github.com/raysan5/raylib)**  
-
-  A minimalist C library for game programming, designed for learning and prototyping. **v5.5** (November 2024) added GPU skinning for 3D model animation, C++ math operators, gamepad vibration, and improved font loading without GPU requirements . Runs on 20+ year old consoles (Dreamcast, PSP, PSVita) thanks to platform-split architecture . Zlib licensed. **Philosophy**: no editor, no scene graph—just functions for drawing, input, and audio. Best for beginners, game jams, and developers who want a simple, dependency-light C foundation.
-
-
-
-- **[FNA](https://github.com/FNA-XNA/FNA)**  
-
-  A faithful, actively maintained reimplementation of XNA 4.0 focused on accuracy and compatibility. Often recommended as the "more actively maintained XNA implementation" compared to MonoGame in certain respects . Used by games that need exact XNA behavior (e.g., for porting legacy titles). MIT licensed. **Trade-off**: prioritizes fidelity over modern feature expansion. Best for porting existing XNA games or projects that depend on precise XNA API semantics.
-
-
-
-- **[Cocos2d-x](https://github.com/cocos2d/cocos2d-x)**  
-
-  A mature C++ cross-platform game framework with Lua and JavaScript bindings. **v4.0** (December 2019) added Metal support for iOS/macOS and CMake-based builds . **Status concern**: development has slowed significantly since 4.0, with community discussion questioning whether the project is abandoned or merely paused; some developers are migrating to **Axmol**, a fork based on Cocos2d-x . Best for existing Cocos2d-x projects, not recommended for new greenfield development without evaluating maintenance risk.
-
-
-
-- **[Allegro](https://github.com/liballeg/allegro5)**  
-
-  A cross-platform C/C++ library for game and multimedia programming, with a long history (originally for DOS). Provides graphics, audio, input, and timing primitives. Actively maintained with a stable API. Best for C/C++ developers who want a mature alternative to SDL with a slightly higher-level API.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Axmol** — Community fork of Cocos2d-x with active maintenance, positioned as a migration path for developers concerned about Cocos2d-x's slowed development . Best for teams with existing Cocos2d-x codebases seeking ongoing updates.
-
-- **Stride3D** — Open-source C# game engine with a full editor, positioned as a more complete alternative to MonoGame for developers who want an engine but prefer C# . Best for C# developers wanting engine features without Unity's licensing model.
-
-- **Frameworks for building custom systems**: Use **MonoGame** or **FNA** for C# game architecture with full control. Choose **Godot** when you want an editor and MIT licensing guarantees. Start with **Raylib** for prototyping or learning. Build on **SDL** when you need maximum platform reach and are writing your own engine layer. Avoid **Cocos2d-x** for new projects without verifying its maintenance trajectory .
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- "Game development library" and "game engine" are distinct categories: MonoGame, Raylib, and SDL are libraries (no editor); Godot and Unity are engines (with editors). Choose based on whether you want to build architecture or use an existing one .
-
-- **Platform risk matters**: Unity's pricing changes (5% increase January 2026, revenue thresholds) demonstrate why some studios are migrating to MIT-licensed Godot for financial predictability .
-
-- **Cocos2d-x maintenance status is uncertain**: development has slowed since 4.0 (2019), and community discussion suggests evaluating forks like Axmol for new projects .
-
-
+</div>
 
 ---
 
+## 📑 Table of Contents
 
+- [🌟 Introduction &amp; SEO Overview](#-introduction--seo-overview)
+- [📊 Sector Overview &amp; Market Dynamics](#-sector-overview--market-dynamics)
+- [💼 Commercial &amp; SaaS Game Platforms](#-commercial--saas-game-platforms)
+- [🔓 Open-Source Game Engines &amp; Libraries](#-open-source-game-engines--libraries)
+  - [🏆 Star-Ranked Open-Source Ecosystem](#-star-ranked-open-source-ecosystem)
+  - [🔍 Deep Dives by Architectural Category](#-deep-dives-by-architectural-category)
+- [🛠️ Decision Matrix: How to Choose](#️-decision-matrix-how-to-choose)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer &amp; Platform Risk Notice](#️-disclaimer--platform-risk-notice)
 
-**Made for game programmers, indie studios, engine developers, and anyone who wants to build games with full control over their technology stack.**  
+---
 
-Let's make game development more open, understandable, and risk-free.
+## 🌟 Introduction &amp; SEO Overview
+
+Whether you are architecting a custom AAA rendering pipeline with **DirectX 12**, **Vulkan**, or **Metal**, shipping a multiplatform 2D indie title on Nintendo Switch, or writing lightweight browser games via **WebGPU** and **WebAssembly (WASM)**, selecting the right software foundation is the most critical technical choice in game production.
+
+This repository catalogs industry-leading commercial platforms and actively maintained open-source libraries across **C++**, **Rust**, **C#**, **C**, **JavaScript/TypeScript**, **Java**, and **Lua**. From minimalist windowing toolkits and low-level graphics abstractions to full-featured visual editors with Entity Component Systems (ECS), discover the best tool for your game architecture.
+
+---
+
+## 📊 Sector Overview &amp; Market Dynamics
+
+- **Estimated Market Size**: The global game engine and game development software market reached approximately **$4.8 Billion** and is projected to expand to **$10.5+ Billion** (growing at a compound annual growth rate of ~**13.5%**), propelled by the rise of indie studio launches, cross-platform mobile gaming, virtual production in film, and real-time 3D simulation.
+- **Market Concentration &amp; Fragmentation**: The sector demonstrates a **bimodal concentration**:
+  - *High Concentration in Enterprise 3D*: The commercial AAA tier is highly concentrated—a near-duopoly dominated by **Epic Games (Unreal Engine)** and **Unity Technologies**, which capture the overwhelming majority of commercial studio seats and real-time cinematic productions.
+  - *High Fragmentation in Indie &amp; Code-First Frameworks*: The 2D, indie, and code-first segments are moderately to highly fragmented. Developer backlash over proprietary runtime fee changes has accelerated mass migration toward MIT/open-source solutions like **Godot Engine**, **Bevy**, **Raylib**, and **SDL**. Studios increasingly favor architectural sovereignty, zero licensing lock-in, and full source code inspectability.
+
+---
+
+## 💼 Commercial &amp; SaaS Game Platforms
+
+The following table benchmarks notable commercial game engines and hosted platforms, sorted by **Company Size (Valuation / Revenue) Descending**.
+
+| 🏢 Platform / Product | 📈 Company Size (Valuation / Revenue) | 🏷️ Pricing (Starting Tier) | 🎁 Free Tier Limit | 🎯 Primary Focus &amp; Target Ecosystem |
+| :--- | :--- | :--- | :--- | :--- |
+| [**Roblox Studio**](https://create.roblox.com/) | **~$32.0 Billion** valuation / **~$3.6B** annual revenue | Free engine and hosting; monetized via **70/30 developer split** (Developers cash out via DevEx at $0.0035/Robux) | **Free forever** for all creators with unlimited hosted multiplayer cloud servers and cloud storage | Metaverse, multiplayer social experiences, user-generated content (UGC), and Lua scripting |
+| [**Unreal Engine**](https://www.unrealengine.com/) | **~$31.5 Billion** valuation / **~$5.8B** annual revenue | **5% royalty** on gross game revenues exceeding **$1,000,000 USD**; or **$1,850/seat/year** for non-gaming commercial seats | **Free forever** until project lifetime gross revenue surpasses **$1,000,000 USD**; includes full source code access and Unreal Editor | AAA photorealistic 3D, Nanite/Lumen rendering, C++, visual Blueprints, PC, consoles, and virtual production |
+| [**Unity**](https://unity.com/) | **~$8.5 Billion** market cap / **~$2.1B** annual revenue | **Unity Pro** starts at **$2,040/seat/year** (or **$185/month** on annual plan); Enterprise starts at **$4,000+/seat/year** | **Unity Personal** is **free forever** for creators/studios with revenue and funding **under $200,000 USD** in the past 12 months (requires "Made with Unity" splash) | 2D/3D cross-platform mobile, indie PC, console games, VR/AR, and comprehensive Asset Store ecosystem |
+| [**GameMaker**](https://gamemaker.io/) | **~$1.6 Billion** parent market cap (Opera) / **~$450M** annual revenue | **GameMaker Professional** starts at **$99.99 one-time payment** for commercial desktop, web, and mobile release; Enterprise console tier at **$79.99/month** | **Free forever** for learning, prototyping, and non-commercial publishing to GX.games web portal | Fast 2D game prototyping, visual GML / code scripting, indie hits (*Undertale*, *Hotline Miami*) |
+| [**Construct 3**](https://www.construct.net/) | **~$30.0 Million** valuation / **~$8.0M** annual revenue | **Personal plan** starts at **$22.99/month** (or **$129.99/year**); Business tier starts at **$45.99/month** (or **$459.99/year**) | **Free edition** is **free forever in-browser**, strictly limited to a maximum of **50 events**, **2 layers**, and non-commercial use | No-code / block-based 2D HTML5 game development, classroom education, and rapid web prototyping |
+
+---
+
+## 🔓 Open-Source Game Engines &amp; Libraries
+
+Open-source game frameworks provide total code autonomy, eliminate runtime fee risks, and allow teams to inspect, debug, and optimize every cycle of their render loops.
+
+### 🏆 Star-Ranked Open-Source Ecosystem
+
+The repositories below are **strictly sorted descending by GitHub Star Count** as of October 2026.
+
+| 🎖️ Rank | 📦 Repository | 🌟 Stars Badge | 💻 Language | 🚀 Architectural Role | 📄 License |
+| :---: | :--- | :--- | :---: | :--- | :---: |
+| 1 | [**Godot Engine**](https://github.com/godotengine/godot) | [![GitHub stars](https://img.shields.io/github/stars/godotengine/godot?style=social&color=white)](https://github.com/godotengine/godot/stargazers) | C++ | Full Feature 2D/3D Game Engine with Visual Editor | MIT |
+| 2 | [**Bevy**](https://github.com/bevyengine/bevy) | [![GitHub stars](https://img.shields.io/github/stars/bevyengine/bevy?style=social&color=white)](https://github.com/bevyengine/bevy/stargazers) | Rust | Data-Driven ECS Engine with Modern WGPU Renderer | MIT / Apache-2.0 |
+| 3 | [**Phaser**](https://github.com/phaserjs/phaser) | [![GitHub stars](https://img.shields.io/github/stars/phaserjs/phaser?style=social&color=white)](https://github.com/phaserjs/phaser/stargazers) | JavaScript | Fast 2D Framework for HTML5, Canvas &amp; WebGL Browsers | MIT |
+| 4 | [**Raylib**](https://github.com/raysan5/raylib) | [![GitHub stars](https://img.shields.io/github/stars/raysan5/raylib?style=social&color=white)](https://github.com/raysan5/raylib/stargazers) | C | Minimalist, Hardware-Accelerated C Game Programming Library | Zlib |
+| 5 | [**LibGDX**](https://github.com/libgdx/libgdx) | [![GitHub stars](https://img.shields.io/github/stars/libgdx/libgdx?style=social&color=white)](https://github.com/libgdx/libgdx/stargazers) | Java | Battle-Tested Cross-Platform 2D/3D Framework | Apache-2.0 |
+| 6 | [**Cocos2d-x**](https://github.com/cocos2d/cocos2d-x) | [![GitHub stars](https://img.shields.io/github/stars/cocos2d/cocos2d-x?style=social&color=white)](https://github.com/cocos2d/cocos2d-x/stargazers) | C++ | Mature 2D Multiplatform Framework for Mobile and Desktop | MIT |
+| 7 | [**bgfx**](https://github.com/bkaradzic/bgfx) | [![GitHub stars](https://img.shields.io/github/stars/bkaradzic/bgfx?style=social&color=white)](https://github.com/bkaradzic/bgfx/stargazers) | C++ | Cross-Platform, Graphics API Agnostic Rendering Library | BSD-2-Clause |
+| 8 | [**SDL (Simple DirectMedia Layer)**](https://github.com/libsdl-org/SDL) | [![GitHub stars](https://img.shields.io/github/stars/libsdl-org/SDL?style=social&color=white)](https://github.com/libsdl-org/SDL/stargazers) | C | Foundational Hardware Windowing, Audio, Input &amp; GPU API | Zlib |
+| 9 | [**MonoGame**](https://github.com/MonoGame/MonoGame) | [![GitHub stars](https://img.shields.io/github/stars/MonoGame/MonoGame?style=social&color=white)](https://github.com/MonoGame/MonoGame/stargazers) | C# | Industry Standard C# Game Framework (XNA 4.0 Successor) | MIT |
+| 10 | [**Open 3D Engine (O3DE)**](https://github.com/o3de/o3de) | [![GitHub stars](https://img.shields.io/github/stars/o3de/o3de?style=social&color=white)](https://github.com/o3de/o3de/stargazers) | C++ | AAA Modular Multiplatform 3D Engine (Amazon Lumberyard Evolution) | Apache-2.0 |
+| 11 | [**LÖVE (Love2D)**](https://github.com/love2d/love) | [![GitHub stars](https://img.shields.io/github/stars/love2d/love?style=social&color=white)](https://github.com/love2d/love/stargazers) | C++ / Lua | Elegant, Lightweight 2D Framework for Rapid Lua Development | Zlib |
+| 12 | [**Stride 3D**](https://github.com/stride3d/stride) | [![GitHub stars](https://img.shields.io/github/stars/stride3d/stride?style=social&color=white)](https://github.com/stride3d/stride/stargazers) | C# | Modern C# 3D Game Engine with PBR Renderer and Editor | MIT |
+| 13 | [**Defold**](https://github.com/defold/defold) | [![GitHub stars](https://img.shields.io/github/stars/defold/defold?style=social&color=white)](https://github.com/defold/defold/stargazers) | C++ / Lua | High-Performance, Turnkey 2D Engine with Tiny Binary Footprint | Defold License |
+| 14 | [**FNA**](https://github.com/FNA-XNA/FNA) | [![GitHub stars](https://img.shields.io/github/stars/FNA-XNA/FNA?style=social&color=white)](https://github.com/FNA-XNA/FNA/stargazers) | C# | High-Fidelity Accuracy-Focused XNA 4.0 Reimplementation | MIT |
+| 15 | [**Allegro 5**](https://github.com/liballeg/allegro5) | [![GitHub stars](https://img.shields.io/github/stars/liballeg/allegro5?style=social&color=white)](https://github.com/liballeg/allegro5/stargazers) | C | Veteran Multimedia, Audio, and 2D Primitives Library | Zlib |
+| 16 | [**Axmol Engine**](https://github.com/axmolengine/axmol) | [![GitHub stars](https://img.shields.io/github/stars/axmolengine/axmol?style=social&color=white)](https://github.com/axmolengine/axmol/stargazers) | C++ | Active Multi-Platform 2D/3D Fork of Cocos2d-x with Modern CMake &amp; WebAssembly | MIT |
+
+---
+
+### 🔍 Deep Dives by Architectural Category
+
+#### 1. Full-Featured Open-Source Engines (With Editors)
+- 🤖 **[Godot Engine](https://github.com/godotengine/godot)** [![GitHub stars](https://img.shields.io/github/stars/godotengine/godot?style=social&color=white)](https://github.com/godotengine/godot/stargazers)  
+  *The undisputed flagship of community-driven game engines.* Godot features dedicated 2D and 3D pipelines, node-based scene architecture, built-in scripting via **GDScript** and **C# (.NET)**, and complete zero-royalty MIT licensing. Powers hits like *Brotato*, *Dome Keeper*, and *Cassette Beasts*.
+- 💎 **[Stride 3D](https://github.com/stride3d/stride)** [![GitHub stars](https://img.shields.io/github/stars/stride3d/stride?style=social&color=white)](https://github.com/stride3d/stride/stargazers)  
+  *The modern open C# alternative to commercial 3D engines.* Features a full graphical editor, realistic Physically-Based Rendering (PBR), forward+ lighting, and pure C# code execution without bridge overhead.
+- 🏢 **[Open 3D Engine (O3DE)](https://github.com/o3de/o3de)** [![GitHub stars](https://img.shields.io/github/stars/o3de/o3de?style=social&color=white)](https://github.com/o3de/o3de/stargazers)  
+  *Linux Foundation-backed AAA heavyweight.* Built with an Atom physically-based renderer, multi-threading job systems, Lua/Python scripting, and modular "Gems" architecture for simulation and high-end 3D graphics.
+
+#### 2. Code-First Frameworks (No Visual Editor)
+- 🦀 **[Bevy](https://github.com/bevyengine/bevy)** [![GitHub stars](https://img.shields.io/github/stars/bevyengine/bevy?style=social&color=white)](https://github.com/bevyengine/bevy/stargazers)  
+  *Next-generation ergonomic ECS engine in Rust.* Leverages an ultra-fast archetypal Entity Component System, cross-platform WebGPU rendering via `wgpu`, fast incremental compilation, and modular Rust plugins.
+- ⚡ **[MonoGame](https://github.com/MonoGame/MonoGame)** [![GitHub stars](https://img.shields.io/github/stars/MonoGame/MonoGame?style=social&color=white)](https://github.com/MonoGame/MonoGame/stargazers)  
+  *The battle-tested indie legend.* Powered blockbuster commercial titles including *Celeste*, *Stardew Valley*, and *Hades*. Provides high-performance 2D/3D sprite batches, audio, and gamepad abstractions across Windows, macOS, Linux, iOS, Android, and consoles.
+- 🎯 **[FNA](https://github.com/FNA-XNA/FNA)** [![GitHub stars](https://img.shields.io/github/stars/FNA-XNA/FNA?style=social&color=white)](https://github.com/FNA-XNA/FNA/stargazers)  
+  *Accuracy-first XNA preservation.* Focuses on 100% exact XNA 4.0 specification compliance, utilizing SDL and modern native backends to ensure legacy and modern .NET games run flawlessly.
+- 💖 **[LÖVE (Love2D)](https://github.com/love2d/love)** [![GitHub stars](https://img.shields.io/github/stars/love2d/love?style=social&color=white)](https://github.com/love2d/love/stargazers)  
+  *Beloved 2D prototyping engine using Lua.* Offers straightforward drawing, audio, and physics primitives via Box2D. Exceptional for 48-hour game jams, hobbyists, and shipping indie cult hits (*Balatro*).
+- ☕ **[LibGDX](https://github.com/libgdx/libgdx)** [![GitHub stars](https://img.shields.io/github/stars/libgdx/libgdx?style=social&color=white)](https://github.com/libgdx/libgdx/stargazers)  
+  *Enterprise Java multiplatform workhorse.* Directly targets desktop (LWJGL), Android, iOS (via RoboVM), and WebGL with unified Java/Kotlin codebases. Proven by *Slay the Spire*.
+
+#### 3. Low-Level Multimedia &amp; Hardware Abstraction
+- 🧱 **[SDL (Simple DirectMedia Layer)](https://github.com/libsdl-org/SDL)** [![GitHub stars](https://img.shields.io/github/stars/libsdl-org/SDL?style=social&color=white)](https://github.com/libsdl-org/SDL/stargazers)  
+  *The backbone of PC and console gaming.* SDL3 introduces modern GPU rendering APIs, high-DPI handling, native storage abstractions, and universal gamepad mapping. Used under the hood by Valve's Steam, emulators, and countless game runtimes.
+- 🎨 **[bgfx](https://github.com/bkaradzic/bgfx)** [![GitHub stars](https://img.shields.io/github/stars/bkaradzic/bgfx?style=social&color=white)](https://github.com/bkaradzic/bgfx/stargazers)  
+  *Cross-platform rendering pipeline abstraction.* Supports Vulkan, DirectX 11/12, Metal, OpenGL, and WebGPU with a unified shader language (`shaderc`). Ideal for programmers writing their own custom engine.
+- 🎒 **[Raylib](https://github.com/raysan5/raylib)** [![GitHub stars](https://img.shields.io/github/stars/raysan5/raylib?style=social&color=white)](https://github.com/raysan5/raylib/stargazers)  
+  *Minimalist C library with zero third-party dependencies.* Offers immediate-mode OpenGL rendering, 3D model loaders, sound management, and bindings to 60+ programming languages.
+
+#### 4. Web &amp; Mobile Specialists
+- 🌐 **[Phaser](https://github.com/phaserjs/phaser)** [![GitHub stars](https://img.shields.io/github/stars/phaserjs/phaser?style=social&color=white)](https://github.com/phaserjs/phaser/stargazers)  
+  *The monarch of browser-based 2D HTML5 games.* Features dual WebGL and Canvas renderers, Arcade/Matter.js physics, tilemap support, and audio sprites tailored for instant web play and mobile browsers.
+- 📱 **[Defold](https://github.com/defold/defold)** [![GitHub stars](https://img.shields.io/github/stars/defold/defold?style=social&color=white)](https://github.com/defold/defold/stargazers)  
+  *Lightweight mobile powerhouse.* Produces sub-5MB binary footprints, zero runtime allocations, Lua scripting, and lightning-fast builds targeting iOS, Android, HTML5, and consoles.
+- 🔄 **[Axmol Engine](https://github.com/axmolengine/axmol)** [![GitHub stars](https://img.shields.io/github/stars/axmolengine/axmol?style=social&color=white)](https://github.com/axmolengine/axmol/stargazers)  
+  *The revitalized modern C++ fork of Cocos2d-x.* Actively updated with WebAssembly support, Metal/Vulkan backends, CMake build pipelines, and modernized C++20 code conventions.
+
+---
+
+## 🛠️ Decision Matrix: How to Choose
+
+```mermaid
+flowchart TD
+    A["🚀 What kind of game are you building?"] --> B{"Prefer visual editor or pure code?"}
+    
+    B -- "Visual Editor GUI" --> C{"3D Fidelity Requirement?"}
+    C -- "AAA Hyper-Realism" --> D["Unreal Engine 5 (C++ / Blueprints)"]
+    C -- "Indie / Stylized / 2D" --> E["Godot Engine 4 (GDScript / C#)"]
+    C -- "C# Ecosystem & PBR" --> F["Stride 3D (C#)"]
+
+    B -- "Code-First Architecture" --> G{"Choose Primary Language"}
+    G -- "Rust" --> H["Bevy Engine (Data-driven ECS)"]
+    G -- "C#" --> I["MonoGame or FNA (XNA architecture)"]
+    G -- "C / C++" --> J["Raylib (Simplicity) or SDL3 (Custom Engine)"]
+    G -- "Lua" --> K["LÖVE (Love2D) or Defold"]
+    G -- "JavaScript / TS" --> L["Phaser (Instant Browser Games)"]
+    G -- "Java / Kotlin" --> M["LibGDX (Multiplatform Desktop & Mobile)"]
+```
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help keep this ecosystem guide updated and comprehensive:
+
+1. 🍴 **Fork the Repository** on GitHub.
+2. 🌿 **Create a Feature Branch**: `git checkout -b feature/add-new-library`.
+3. 📝 **Add or Update Entries**: Ensure your entries adhere to the table structure, link directly to GitHub repositories or official sites, and provide concrete pricing/limits.
+4. 🚀 **Submit a Pull Request** with a concise description of your changes.
+
+---
+
+## ⚖️ Disclaimer &amp; Platform Risk Notice
+
+- This repository is a community-maintained curated index, not an endorsement of any commercial platform.
+- **Platform &amp; Pricing Risk**: Proprietary engines can introduce retroactive fee restructuring, price hikes, or editor monetization changes. Teams with multi-year production schedules should carefully weigh open-source frameworks (MIT, Zlib, Apache-2.0) against commercial vendor lock-in.
+- **Maintenance Health**: Always inspect GitHub commit velocity, open issue resolution rates, and release frequency when adopting third-party dependencies for commercial titles.
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ for the global game development community. Star ⭐ this repo to help fellow game creators find their ideal engine!</sub>
+</div>
