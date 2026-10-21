@@ -12,6 +12,7 @@
 <a href="https://github.com/ishandutta2007/Awesome-Game-Development-Libraries/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Game-Development-Libraries?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Game-Development-Libraries/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Game-Development-Libraries/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 *Empowering indie game creators, graphics engineers, studio architects, and engine tinkerers with code-first frameworks, low-level APIs, and production-tested game tech.*
@@ -30,6 +31,8 @@
   - [🔍 Deep Dives by Architectural Category](#-deep-dives-by-architectural-category)
 - [🛠️ Decision Matrix: How to Choose](#️-decision-matrix-how-to-choose)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support &amp; Sponsoring](#-support--sponsoring)
+- [📈 Star History](#--star-history)
 - [⚖️ Disclaimer &amp; Platform Risk Notice](#️-disclaimer--platform-risk-notice)
 
 ---
@@ -164,6 +167,22 @@ Contributions are warmly welcomed! Help keep this ecosystem guide updated and co
 2. 🌿 **Create a Feature Branch**: `git checkout -b feature/add-new-library`.
 3. 📝 **Add or Update Entries**: Ensure your entries adhere to the table structure, link directly to GitHub repositories or official sites, and provide concrete pricing/limits.
 4. 🚀 **Submit a Pull Request** with a concise description of your changes.
+
+---
+
+## 💖 Support &amp; Sponsoring
+
+Thank you for exploring and using this game development directory! If you find this curated resource valuable for your projects or research, please consider supporting:
+
+- ⭐ **Star this repository** on GitHub to increase its visibility for fellow game creators.
+- 🍴 **Fork and share** with your developer teams, game jam communities, and indie circles.
+- ☕ **Buy a coffee / Sponsor**: Support ongoing maintenance and ecosystem curation via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007). Every contribution is deeply appreciated!
+
+---
+
+##  Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Game-Development-Libraries&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Game-Development-Libraries&type=date&legend=top-left)
 
 ---
 
